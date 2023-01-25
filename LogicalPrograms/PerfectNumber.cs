@@ -9,9 +9,10 @@ namespace LogicalPrograms
     public class PerfectNumber
     {
         public static int number,sum=0;
+        //2.Check number is Perfect number or not.
         public static void CheckPerfectNumber()
         {
-            Console.WriteLine("Please enter number for check Perfect Number");
+            Console.WriteLine("Enter number for check Perfect Number");
             number=Convert.ToInt32(Console.ReadLine());
             for(int i=1; i<number; i++)
             {
