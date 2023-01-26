@@ -6,7 +6,7 @@
         {
             Console.WriteLine("Welcome to the Logical Programs\n------------------------------------");
             Console.WriteLine("Please select any option");
-            Console.WriteLine("1.FindFibonacciSeries\n2.CheckPerfectNumber\n3.CheckPrimeNumber\n4.FindReverseNumber\n5.TemperaturConversion\n6.GregorianCalendar\n13.Exit\n");
+            Console.WriteLine("1.FindFibonacciSeries\n2.CheckPerfectNumber\n3.CheckPrimeNumber\n4.FindReverseNumber\n5.TemperaturConversion\n6.GregorianCalendar\n7.FindMonthlyPayment\n13.Exit\n");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -34,6 +34,10 @@
                 case 6:
                     Console.Clear();
                     GregorianCalendar.DayOfWeek();
+                    break;
+                case 7:
+                    Console.Clear();
+                    MonthlyPayment.FindMonthlyPayment();
                     break;
                 case 13:
                     Console.Clear();
