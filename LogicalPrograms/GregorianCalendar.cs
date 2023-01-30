@@ -8,7 +8,9 @@ namespace LogicalPrograms
 {
     public class GregorianCalendar
     {
-        public static int date, month, year;
+        public static int date;
+        public static int month;
+        public static int year;
         //6.Pints the day of the week that date falls on.
         public static void DayOfWeek()
         {
