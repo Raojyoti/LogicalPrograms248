@@ -18,16 +18,6 @@ namespace LogicalPrograms
             int month = Convert.ToInt32(Console.ReadLine());
             Console.Write("Please enter value for year: ");
             int year = Convert.ToInt32(Console.ReadLine());
-            if (month == 1)
-            {
-                month = 13;
-                year--;
-            }
-            if (month == 2)
-            {
-                month = 14;
-                year--;
-            }
             int m = month;
             int d = date;
             int y = year;
@@ -39,6 +29,9 @@ namespace LogicalPrograms
             d0 = d0 % 7;
             switch (d0)
             {
+                case 0:
+                    Console.WriteLine("Sunday");
+                    break;
                 case 1:
                     Console.WriteLine("Monday");
                     break;
@@ -56,9 +49,6 @@ namespace LogicalPrograms
                     break;
                 case 6:
                     Console.WriteLine("Saturday");
-                    break;
-                case 7:
-                    Console.WriteLine("Sunday");
                     break;
             }
         }
